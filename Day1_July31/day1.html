@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puja Roy</title>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+    <p>Add images into a webpage</p>
+    <img src="images/LordShiva.jpg" alt="Pic of Lord Shiva" title="Look at Lord Shiva" width="50%">
+    <figure>
+        <img src="images/LordShiva.jpg" alt="Pic of Lord Shiva" title="Look at Lord Shiva" width="100%">
+        <img src="images/LordShiva.jpg" alt="Pic of Lord Shiva" title="Look at Lord Shiva" width="49%">
+        <img src="images/LordShiva.jpg" alt="Pic of Lord Shiva" title="Look at Lord Shiva" width="49%">
+        <figcaption>Picture of Brooklyn Bridge</figcaption>
+    </figure>
+    <!--CLASS BREAK-->
+    <h1 id="#picTag">picture tag</h1>
+    <p>Resize the browser window to load different photos of Lord Shiva</p>
+    <picture>
+        <source media="(min-width:1100px)" srcset="images/lordshiva2.jpg">
+        <source media="(min-width:800px)" srcset="images/lordshiva3.jpg">
+        <source media="(min-width:500px)" srcset="images/lordshiva4.jpeg">
+        <img src="images/LordShiva.jpg" alt="Photo of Lord Shiva" width="60%">
+    </picture>
+
+    <!--LINKS-->
+    <h1 id="#links">Link to other sites</h1>
+    <a href="http://www.qcc.cuny.edu" target="_blank" rel="noopener noreferrer">Visit QCC website</a>
+    <a href="mailto:pujaroy280@gmail.com">Email to Miss Roy</a>
+    <p>Follow us:</p>
+    <figure>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <img src="C:\Users\pujar\OneDrive\Desktop\SWE AppDev 2023\Day1_July31\images\317720_social media_tweet_twitter_social_icon.svg" alt="Logo of Twitter: follow us in Twitter" width="20%">
+        </a>
+        <a href="https://www.tiktok.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="C:\Users\pujar\OneDrive\Desktop\SWE AppDev 2023\Day1_July31\images\7564186_tiktok_logo_brand_icon.svg" alt="Logo of Tiktok: Follow us in Tiktok" width="20%">
+        </a>    
+    </figure>
+    <h1>Link to a specific part of the same web page</h1>
+    <ul>
+        <li>
+            <a href="#">Top of the page</a>
+        </li>
+        <li>
+            <a href="#picTag">Picture Tag</a>
+        </li>
+        <li>
+            <a href="#links">Links</a>
+        </li>
+    </ul>
+    <h1>map tag</h1>
+    <figure>
+        <img src="images/lordshiva4.jpeg" alt="pic of lord shiva" width="500px" usemap="#nyc">
+    </figure>
+    <map name="#nyc">
+        <area shape="rect" coords="300px,20px,350px,170px" href="https://en.wikipedia.org/wiki/New_York_City" alt= "Wiki page of NYC" target="_blank" rel="noopener noreferrer">
+        <area shape="circle" coords="100px,210px,30px" href="https://en.wikipedia.org/wiki/United_States" alt="Wiki page of USA" target="_blank" rel="noopener noreferrer">
+    </map>
+    <hr>
+    <footer>HTML review @ Puja Roy</footer>
+</body>
+</html>
